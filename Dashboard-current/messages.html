@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+    <!--[if IE 9 ]><html class="ie9"><![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Material Admin</title>
+        
+        <!-- Vendor CSS -->
+        <link href="vendors/animate-css/animate.min.css" rel="stylesheet">
+        <link href="vendors/sweet-alert/sweet-alert.min.css" rel="stylesheet">
+        <link href="vendors/material-icons/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="vendors/socicon/socicon.min.css" rel="stylesheet">
+            
+        <!-- CSS -->
+        <link href="css/app.min.1.css" rel="stylesheet">
+        <link href="css/app.min.2.css" rel="stylesheet">
+          <link href="css/style-new.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header id="header">
+
+            <ul class="header-inner">
+                <li id="menu-trigger" data-trigger="#sidebar">
+                    <div class="line-wrap">
+                        <div class="line top"></div>
+                        <div class="line center"></div>
+                        <div class="line bottom"></div>
+                    </div>
+                </li>
+            
+                <li class="logo hidden-xs">
+                    <a href="index.html"><span class="treatease">Treatease&nbsp; </span> <img class="prw" src="img/prw.png" width="80px;" /></a>
+                </li>
+                
+                <li class="pull-right">
+                <ul class="top-menu">
+                    <li id="toggle-width">
+                        <div class="toggle-switch">
+                            <input id="tw-switch" type="checkbox" hidden="hidden">
+                            <label for="tw-switch" class="ts-helper"></label>
+                        </div>
+                    </li>
+                    <li id="top-search">
+                        <a class="tm-search" href=""></a>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="tm-message" href=""><i class="tmn-counts">6</i></a>
+                        <div class="dropdown-menu dropdown-menu-lg pull-right">
+                            <div class="listview">
+                                <div class="lv-header">
+                                    Messages
+                                </div>
+                                <div class="lv-body c-overflow">
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/128-3.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Shark Henry</div>
+                                                <small class="lv-small">For some reason I got really depressed. everything seemed fine then i started thinking about all the things i could have done and that really makes me want to use now.</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/128-10.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Jonathan Morris</div>
+                                                <small class="lv-small">Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/128-8.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Fredric Mitchell Jr.</div>
+                                                <small class="lv-small">Phasellus a ante et est ornare accumsan at vel magnauis blandit turpis at augue ultricies</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/128.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Glenn Jecobs</div>
+                                                <small class="lv-small">Ut vitae lacus sem ellentesque maximus, nunc sit amet varius dignissim, dui est consectetur neque</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Bill Phillips</div>
+                                                <small class="lv-small">Proin laoreet commodo eros id faucibus. Donec ligula quam, imperdiet vel ante placerat</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a class="lv-footer" href="">View All</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="tm-notification" href=""><i class="tmn-counts">9</i></a>
+                        <div class="dropdown-menu dropdown-menu-lg pull-right">
+                            <div class="listview" id="notifications">
+                                <div class="lv-header">
+                                    Notifications
+                    
+                                    <ul class="actions">
+                                        <li class="dropdown">
+                                            <a href="" data-clear="notification">
+                                                <i class="md md-done-all"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="lv-body c-overflow">
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/128-4.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Shark Henry</div>
+                                                <small class="lv-small">For some reason I got really depressed. everything seemed fine then i started thinking about all the things i could have done and that really makes me want to use now.</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/128-10.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Jonathan Morris</div>
+                                                <small class="lv-small">Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/128-8.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Fredric Mitchell Jr.</div>
+                                                <small class="lv-small">Phasellus a ante et est ornare accumsan at vel magnauis blandit turpis at augue ultricies</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/128.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Glenn Jecobs</div>
+                                                <small class="lv-small">Ut vitae lacus sem ellentesque maximus, nunc sit amet varius dignissim, dui est consectetur neque</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Bill Phillips</div>
+                                                <small class="lv-small">Proin laoreet commodo eros id faucibus. Donec ligula quam, imperdiet vel ante placerat</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                    
+                                <a class="lv-footer" href="">View Previous</a>
+                            </div>
+                    
+                        </div>
+                    </li>
+                    <li class="dropdown hidden-xs">
+                        <a data-toggle="dropdown" class="tm-task" href=""><i class="tmn-counts">6</i></a>
+                        <div class="dropdown-menu pull-right dropdown-menu-lg">
+                            <div class="listview">
+                                <div class="lv-header">
+                                    Tasks
+                                </div>
+                                <div  style="padding: 10px;">
+                                        <div class="checkbox media">
+                                        <div class="media-body">
+                                            <label>
+                                                <input type="checkbox">
+                                                <i class="input-helper"></i>
+                                                <span>Gambling-based treatment tips</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="padding: 10px;">
+                                        <div class="checkbox media">
+                                        <div class="media-body">
+                                            <label>
+                                                <input type="checkbox">
+                                                <i class="input-helper"></i>
+                                                <span>Jackson Shwartz's patient summary</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div  style="padding: 10px;">
+                                        <div class="checkbox media">
+                                        <div class="media-body">
+                                            <label>
+                                                <input type="checkbox">
+                                                <i class="input-helper"></i>
+                                                <span>Discharge plan for Monica Reed</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="padding: 10px;">
+                                        <div class="checkbox media">
+                                        <div class="media-body">
+                                            <label>
+                                                <input type="checkbox">
+                                                <i class="input-helper"></i>
+                                                <span>New counselor training manual</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="hidden-xs" id="chat-trigger" data-trigger="#chat">
+                        <a class="tm-chat" href=""></a>
+                    </li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <!-- Top Search Content -->
+            <div id="top-search-wrap">
+                <input type="text">
+                <i id="top-search-close">&times;</i>
+            </div>
+        </header>
+        
+        <section id="main">
+            <aside id="sidebar">
+                <div class="sidebar-inner">
+                    <div class="si-inner">
+                        <div class="profile-menu">
+                            <a href="">
+                                <div class="profile-pic">
+                                    <img src="img/ui-sam.jpg" alt="">
+                                </div>
+                                
+                                <div class="profile-info">
+                                    <strong>Quinton Baker</strong>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <ul class="main-menu">
+                            <li class="active"><a href="index.html"><i class="md md-home"></i> Home</a></li>
+                            <li><a href="messages.html"><i class="md md-chat"></i> Chat</a></li>
+                            <li><a href="list-view.html"><i class="md  md-recent-actors"></i>Clients</a></li>
+                             <li >
+                                <a href="toolbox.html"><i class="md md-my-library-books"></i>Treatment plans</a>
+                            </li>
+                            <li><a href="calendar.html"><i class="md md-today"></i> Appointments</a></li>
+
+                            <li><a href="beds.html"><i class="md md-assignment"></i> Bed Management</a></li>
+                             <li><a href="data-tables.html"><i class="md md-attach-money"></i> Billing</a></li>
+                                    
+                           
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            
+            <aside id="chat">
+                <ul class="tab-nav tn-justified" role="tablist">
+                    <li role="presentation" class="active"><a href="#Clients" aria-controls="Clients" role="tab" data-toggle="tab">Clients</a></li>
+                    <li role="presentation"><a href="#online" aria-controls="online" role="tab" data-toggle="tab">Clinicians</a></li>
+                </ul>
+                
+                <div class="chat-search">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" placeholder="Search People">
+                    </div>
+                </div>
+                
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="Clients">
+                        <div class="listview">
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-11.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Jonathan Morris</div>
+                                        <small class="lv-small">Available</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-12.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">David Belle</div>
+                                        <small class="lv-small">Last seen 3 hours ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-10.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Fredric Mitchell Jr.</div>
+                                        <small class="lv-small">Availble</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-9.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Glenn Jecobs</div>
+                                        <small class="lv-small">Availble</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-13.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Bill Phillips</div>
+                                        <small class="lv-small">Last seen 3 days ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-8.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Wendy Mitchell</div>
+                                        <small class="lv-small">Last seen 2 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-7.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Teena Bell Ann</div>
+                                        <small class="lv-small">Busy</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="online">
+                        <div class="listview">
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-7.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Jonathan Morris</div>
+                                        <small class="lv-small">Available</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-8.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Fredric Mitchell Jr.</div>
+                                        <small class="lv-small">Availble</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-9.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Glenn Jecobs</div>
+                                        <small class="lv-small">Availble</small>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-10.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Teena Bell Ann</div>
+                                        <small class="lv-small">Busy</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        
+        
+            <section id="content">
+                <div class="container">
+                    <div class="block-header">
+                        <h2><strong>Patient Chat</strong></h2>
+                    </div>
+                
+                    <div class="card m-b-0" id="messages-main">
+                       
+                        
+                        <div class="ms-menu">
+                            <div class="ms-block">
+                                <div class="ms-user">
+                                    <img src="img/ui-sam.jpg" alt="">
+                                    <div><strong><h5>Quinton Baker</h5></strong></div>
+                                </div>
+                            </div>
+                            
+                            <div class="ms-block">
+                                <div class="dropdown" data-animation="flipInX,flipOutX">
+                                    <a class="btn btn-primary btn-block" href="" data-toggle="dropdown"><strong>Groups</strong><i class="caret m-l-5"></i></a>
+
+                                    <ul class="dropdown-menu dm-icon w-100">
+                                        <li><a href="">Alcohol</a></li>
+                                        <li><a href="">Narcotics</a></li>
+                                        <li><a href="">Cocaine</a></li>
+                                        <li><a href="">Marijuana</a></li>
+                                        <li><a href="">Pills</a></li>
+                                        <li><a href="">Sex</a></li>
+                                        <li><a href="">Pills</a></li> </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="listview lv-user m-t-20">
+                                <div class="lv-item media active">
+                                    <div class="lv-avatar pull-left">
+                                        <img src="img/profile-pics/128-11.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Jackie Parnell</div>
+                                        <div class="lv-small">Yeah but my sense of self came from that destructive support!</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lv-item media">
+                                    <div class="lv-avatar pull-left">
+                                        <img src="img/profile-pics/128-2.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Ann Watkinson</div>
+                                        <div class="lv-small">I feel that! But what I learned was that the more I spent away from those people and with the group, I felt more like myself.  </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lv-item media">
+                                    <div class="lv-avatar pull-left">
+                                        <img src="img/profile-pics/128-5.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Marse Walter</div>
+                                        <div class="lv-small">Is anyone planning on going to that </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lv-item media">
+                                    <div class="lv-avatar pull-left">
+                                        <img src="img/profile-pics/128-1.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Jeremy Robbins</div>
+                                        <div class="lv-small">I am! Do you want to..</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lv-item media">
+                                    <div class="lv-avatar pull-left">
+                                        <img src="img/profile-pics/128-9.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Reginald Horace</div>
+                                        <div class="lv-small">Ugh I wish that I was still..</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lv-item media">
+                                    <div class="lv-avatar pull-left">
+                                        <img src="img/profile-pics/128-4.jpg"/>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Shark Henry</div>
+                                        <div class="lv-small">Feeling pretty out of sorts</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lv-item media">
+                                    <div class="lv-avatar pull-left">
+                                        <img src="img/profile-pics/128-13.jpg"/>
+                                    </div>                              
+                                    <div class="media-body">
+                                        <div class="lv-title">Paul Van Dack</div>
+                                        <div class="lv-small">Has anyone seen this new</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lv-item media">
+                                    <div class="lv-avatar pull-left">
+                                        <img src="img/profile-pics/128.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">James Anderson</div>
+                                        <div class="lv-small">So I was planning on seeing</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="lv-item media">
+                                    <div class="lv-avatar pull-left">
+                                        <img src="img/profile-pics/profile-pic-2.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Miranda Jones</div>
+                                        <div class="lv-small">Ok this week was not the</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                        
+                        <div class="ms-body">
+                            <div class="listview lv-message">
+                                <div class="lv-header-alt bgm-white">
+                                    <div id="ms-menu-trigger">
+                                        <div class="line-wrap">
+                                            <div class="line top"></div>
+                                            <div class="line center"></div>
+                                            <div class="line bottom"></div>
+                                        </div>
+                                    </div>
+
+
+                                    
+                                    <ul class="lv-actions actions">
+                                        <li>
+                                            <a href="">
+                                                <i class="md md-access-time"></i>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown" aria-expanded="true">
+                                                <i class="md md-sort"></i>
+                                            </a>
+                                
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Latest</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Oldest</a>
+                                                </li>
+                                            </ul>
+                                        </li>                             
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown" aria-expanded="true">
+                                                <i class="md md-more-vert"></i>
+                                            </a>
+                                
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Refresh</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Message Settings</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="lv-body">                                    
+                                    <div class="lv-item media">
+                                        <div class="lv-avatar pull-left">
+                                            <img src="img/profile-pics/128-11.jpg" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="ms-item">
+The thought of meeting up with with old trigger Clients, comes with the thought of slipping back into the nostalgic notions of wild nights and endless shots. Those were great times, but it just isn’t. I know that but I still want it. Does anyone feel this way too?
+                                            </div>
+                                            <small class="ms-date"><i class="md md-access-time"></i> 20/02/2017 at 09:00</small>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="lv-item media right">
+                                        <div class="lv-avatar pull-right">
+                                            <img src="img/ui-sam.jpg" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="ms-item">
+                                                The important thing here is your sense of identity in you and your choices. In this equation, your sense of self and identity as a drinker is really the only variable you can change. Our history will stay the same no matter what we do - but our present, we have control over. The value other people place on alcohol will be what they place on it - this is not our job to change it. What is most important is our own choice and choices.
+                                            </div>
+                                            <small class="ms-date"><i class="md md-access-time"></i> 20/02/2017 at 09:30</small>
+                                        </div>
+                                    </div>
+                                                                        <div class="lv-item media">
+                                        <div class="lv-avatar pull-left">
+                                            <img src="img/profile-pics/128-2.jpg" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="ms-item">
+                                                I feel that! But what I learned was that the more I spent away from those people and with the group, I felt more like myself. 
+                                            </div>
+                                            <small class="ms-date"><i class="md md-access-time"></i> 20/02/2017 at 10:24</small>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="lv-item media">
+                                        <div class="lv-avatar pull-left">
+                                            <img src="img/profile-pics/128-11.jpg" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="ms-item">
+                                                Yeah but my sense of self came from that destructive support!
+                                            </div>
+                                            <small class="ms-date"><i class="md md-access-time"></i> 20/02/2017 at 09:33</small>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="lv-item media right">
+                                        <div class="lv-avatar pull-right">
+                                            <img src="img/ui-sam.jpg" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="ms-item">
+                                                I would love your experiences and reflections in how you went about coming ‘out’ about your desire to change your relationship with alcohol and the outcome of those relationships.
+                                            </div>
+                                            <small class="ms-date"><i class="md md-access-time"></i> 20/02/2017 at 10:10</small>
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                                
+                                <div class="lv-footer ms-reply">
+                                    <textarea placeholder="Write your message here"></textarea>
+                                    
+                                    <button><i class="md md-send"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        <!-- Older IE warning message -->
+        <!--[if lt IE 9]>
+            <div class="ie-warning">
+                <h1 class="c-white">IE SUCKS!</h1>
+                <p>You are using an outdated version of Internet Explorer, upgrade to any of the following web browser <br/>in order to access the maximum functionality of this website. </p>
+                <ul class="iew-download">
+                    <li>
+                        <a href="http://www.google.com/chrome/">
+                            <img src="img/browsers/chrome.png" alt="">
+                            <div>Chrome</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.mozilla.org/en-US/firefox/new/">
+                            <img src="img/browsers/firefox.png" alt="">
+                            <div>Firefox</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.opera.com">
+                            <img src="img/browsers/opera.png" alt="">
+                            <div>Opera</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.apple.com/safari/">
+                            <img src="img/browsers/safari.png" alt="">
+                            <div>Safari</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="img/browsers/ie.png" alt="">
+                            <div>IE (New)</div>
+                        </a>
+                    </li>
+                </ul>
+                <p>Upgrade your browser for a Safer and Faster web experience. <br/>Thank you for your patience...</p>
+            </div>   
+        <![endif]-->
+    
+        <!-- Javascript Libraries -->
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <script src="vendors/nicescroll/jquery.nicescroll.min.js"></script>
+        <script src="vendors/waves/waves.min.js"></script>
+        <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="vendors/sweet-alert/sweet-alert.min.js"></script>
+        
+        <script src="js/functions.js"></script>
+        <script src="js/demo.js"></script>
+        
+    
+    </body>
+</html>

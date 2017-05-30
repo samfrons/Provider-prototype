@@ -1,0 +1,58 @@
+#header {
+	background: #002b4e;
+	    left: 0%;
+	        width: 100%;
+}
+
+.header-inner .logo a {
+	font-size: 30px;
+	font-weight: 500;
+	  margin-top: -4px;
+  padding-top: 0px;
+}
+
+#todo-lists {
+	font-family: "Roboto", sans-serif;
+}
+
+#sidebar .profile-menu > a {
+	background: url(../img/side-bk.png) no-repeat left top;
+	background-size: 100% auto;
+}
+
+.hidden-xs {
+	opacity: 1;
+}
+
+body {
+	    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+.treatease {
+	display: none;
+}
+
+.prw {
+	width: 200px
+}
+
+#sidebar .profile-menu > a, .btn-primary {
+	background: #002b4e;
+}
+
+.fc-toolbar {
+    background: #002b4e !important;
+}
+
+ul.main-menu > li:nth-child(7)  {
+	background: red; 
+	visibility: hidden;
+}
+
+ul.main-menu > li:nth-child(6)  {
+	background: red; 
+	visibility: hidden;
+}

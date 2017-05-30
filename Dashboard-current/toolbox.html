@@ -1,0 +1,1019 @@
+
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie9"><![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Material Admin</title>
+
+        <!-- Vendor CSS -->
+        <link href="vendors/mediaelement/mediaelementplayer.css" rel="stylesheet">
+        <link href="vendors/fullcalendar/fullcalendar.css" rel="stylesheet">
+        <link href="vendors/animate-css/animate.min.css" rel="stylesheet">
+        <link href="vendors/sweet-alert/sweet-alert.min.css" rel="stylesheet">
+        <link href="vendors/material-icons/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="vendors/socicon/socicon.min.css" rel="stylesheet">
+            
+        <!-- CSS -->
+        <link href="css/app.min.1.css" rel="stylesheet">
+        <link href="css/app.min.2.css" rel="stylesheet">
+         <link href="css/style-new.css" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <ul class="header-inner">
+                <li id="menu-trigger" data-trigger="#sidebar">
+                    <div class="line-wrap">
+                        <div class="line top"></div>
+                        <div class="line center"></div>
+                        <div class="line bottom"></div>
+                    </div>
+                </li>
+            
+                <li class="logo hidden-xs">
+                    <a href="index.html"><span class="treatease">Treatease&nbsp; </span> <img class="prw" src="img/prw.png" width="80px;" /></a>
+                </li>
+                
+                <li class="pull-right">
+                <ul class="top-menu">
+                    <li id="toggle-width">
+                        <div class="toggle-switch">
+                            <input id="tw-switch" type="checkbox" hidden="hidden">
+                            <label for="tw-switch" class="ts-helper"></label>
+                        </div>
+                    </li>
+                    <li id="top-search">
+                        <a class="tm-search" href=""></a>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="tm-message" href=""><i class="tmn-counts">6</i></a>
+                        <div class="dropdown-menu dropdown-menu-lg pull-right">
+                            <div class="listview">
+                                <div class="lv-header">
+                                    Messages
+                                </div>
+                                <div class="lv-body c-overflow">
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/1.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">David Belle</div>
+                                                <small class="lv-small">Cum sociis natoque penatibus et magnis dis parturient montes</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/2.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Jonathan Morris</div>
+                                                <small class="lv-small">Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/3.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Fredric Mitchell Jr.</div>
+                                                <small class="lv-small">Phasellus a ante et est ornare accumsan at vel magnauis blandit turpis at augue ultricies</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Glenn Jecobs</div>
+                                                <small class="lv-small">Ut vitae lacus sem ellentesque maximus, nunc sit amet varius dignissim, dui est consectetur neque</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Bill Phillips</div>
+                                                <small class="lv-small">Proin laoreet commodo eros id faucibus. Donec ligula quam, imperdiet vel ante placerat</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a class="lv-footer" href="">View All</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="tm-notification" href=""><i class="tmn-counts">9</i></a>
+                        <div class="dropdown-menu dropdown-menu-lg pull-right">
+                            <div class="listview" id="notifications">
+                                <div class="lv-header">
+                                    Notification
+                    
+                                    <ul class="actions">
+                                        <li class="dropdown">
+                                            <a href="" data-clear="notification">
+                                                <i class="md md-done-all"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="lv-body c-overflow">
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/1.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">David Belle</div>
+                                                <small class="lv-small">Cum sociis natoque penatibus et magnis dis parturient montes</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/2.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Jonathan Morris</div>
+                                                <small class="lv-small">Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/3.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Fredric Mitchell Jr.</div>
+                                                <small class="lv-small">Phasellus a ante et est ornare accumsan at vel magnauis blandit turpis at augue ultricies</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Glenn Jecobs</div>
+                                                <small class="lv-small">Ut vitae lacus sem ellentesque maximus, nunc sit amet varius dignissim, dui est consectetur neque</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="lv-item" href="">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">Bill Phillips</div>
+                                                <small class="lv-small">Proin laoreet commodo eros id faucibus. Donec ligula quam, imperdiet vel ante placerat</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                    
+                                <a class="lv-footer" href="">View Previous</a>
+                            </div>
+                    
+                        </div>
+                    </li>
+                    <li class="dropdown hidden-xs">
+                        <a data-toggle="dropdown" class="tm-task" href=""><i class="tmn-counts">2</i></a>
+                        <div class="dropdown-menu pull-right dropdown-menu-lg">
+                            <div class="listview">
+                                <div class="lv-header">
+                                    Tasks
+                                </div>
+                                <div class="lv-body">
+                                    <div class="lv-item">
+                                        <div class="lv-title m-b-5">HTML5 Validation Report</div>
+                    
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+                                                <span class="sr-only">95% Complete (success)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lv-item">
+                                        <div class="lv-title m-b-5">Google Chrome Extension</div>
+                    
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                                <span class="sr-only">80% Complete (success)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lv-item">
+                                        <div class="lv-title m-b-5">Social Intranet Projects</div>
+                    
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                                <span class="sr-only">20% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lv-item">
+                                        <div class="lv-title m-b-5">Bootstrap Admin Template</div>
+                    
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                                <span class="sr-only">60% Complete (warning)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lv-item">
+                                        <div class="lv-title m-b-5">Youtube Client App</div>
+                    
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                                <span class="sr-only">80% Complete (danger)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <a class="lv-footer" href="">View All</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="tm-settings" href=""></a>
+                        <ul class="dropdown-menu dm-icon pull-right">
+                            <li>
+                                <a data-action="fullscreen" href=""><i class="md md-fullscreen"></i> Toggle Fullscreen</a>
+                            </li>
+                            <li>
+                                <a data-action="clear-localstorage" href=""><i class="md md-delete"></i> Clear Local Storage</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="md md-person"></i> Privacy Settings</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="md md-settings"></i> Other Settings</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hidden-xs" id="chat-trigger" data-trigger="#chat">
+                        <a class="tm-chat" href=""></a>
+                    </li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <!-- Top Search Content -->
+            <div id="top-search-wrap">
+                <input type="text">
+                <i id="top-search-close">&times;</i>
+            </div>
+        </header>
+        
+        <section id="main">
+            <aside id="sidebar">
+                <div class="sidebar-inner">
+                    <div class="si-inner">
+                        <div class="profile-menu">
+                            <a href="">
+                                <div class="profile-pic">
+                                    <img src="img/ui-sam.jpg" alt="">
+                                </div>
+                                
+                                <div class="profile-info">
+                                    <strong>Quinton Baker</strong>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <ul class="main-menu">
+                            <li ><a href="index.html"><i class="md md-home"></i> Home</a></li>
+                            <li><a href="messages.html"><i class="md md-chat"></i> Chat</a></li>
+                            <li><a href="list-view.html"><i class="md  md-recent-actors"></i>Clients</a></li>
+                             <li class="active">
+                                <a href="toolbox.html"><i class="md md-my-library-books"></i>Treatment plans</a>
+                            </li>
+                            <li><a href="calendar.html"><i class="md md-today"></i> Appointments</a></li>
+
+                            <li><a href="beds.html"><i class="md md-assignment"></i> Bed Manager</a></li>
+                             <li><a href="data-tables.html"><i class="md md-attach-money"></i> Billing</a></li>
+                                    
+                           
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            
+            <aside id="chat">
+                <ul class="tab-nav tn-justified" role="tablist">
+                    <li role="presentation" class="active"><a href="#Clients" aria-controls="Clients" role="tab" data-toggle="tab">Clients</a></li>
+                    <li role="presentation"><a href="#online" aria-controls="online" role="tab" data-toggle="tab">Clinicians</a></li>
+                </ul>
+                
+                <div class="chat-search">
+                    <div class="fg-line">
+                        <input type="text" class="form-control" placeholder="Search People">
+                    </div>
+                </div>
+                
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="Clients">
+                        <div class="listview">
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-11.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Jonathan Morris</div>
+                                        <small class="lv-small">Available</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-12.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">David Belle</div>
+                                        <small class="lv-small">Last seen 3 hours ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-10.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Fredric Mitchell Jr.</div>
+                                        <small class="lv-small">Availble</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-9.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Glenn Jecobs</div>
+                                        <small class="lv-small">Availble</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-13.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Bill Phillips</div>
+                                        <small class="lv-small">Last seen 3 days ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-8.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Wendy Mitchell</div>
+                                        <small class="lv-small">Last seen 2 minutes ago</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-7.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Teena Bell Ann</div>
+                                        <small class="lv-small">Busy</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="online">
+                        <div class="listview">
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-7.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Jonathan Morris</div>
+                                        <small class="lv-small">Available</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-8.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Fredric Mitchell Jr.</div>
+                                        <small class="lv-small">Availble</small>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-9.jpg" alt="">
+                                        <i class="chat-status-online"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Glenn Jecobs</div>
+                                        <small class="lv-small">Availble</small>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="lv-item" href="">
+                                <div class="media">
+                                    <div class="pull-left p-relative">
+                                        <img class="lv-img-sm" src="img/profile-pics/128-10.jpg" alt="">
+                                        <i class="chat-status-busy"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="lv-title">Teena Bell Ann</div>
+                                        <small class="lv-small">Busy</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            
+            
+            <section id="content">
+                <div class="container">
+
+                    <!-- Basic -->
+                    <div class="block-header">
+                        <h2><strong>&nbsp;Treatment Toolbox</strong></h2>
+                       
+                    </div>
+                    <div class="row col-xs-12">
+                    <div>
+                    <div class="row col-xs-12" style="margin: 0 auto">
+                        <div class="card">
+                        <div class="card-header ch-alt m-b-20" style="background:white">
+                        <div class="input-group input-group-lg">
+
+                            <div class="fileinput fileinput-new col-xs-3" data-provides="fileinput">
+                                <div class="fileinput-preview thumbnail" data-trigger="fileinput"></div>
+                                <div>
+                                    <span class="btn btn-default waves-effect waves-button waves-float btn-file">
+                                        <span class="fileinput-new">Select image</span>
+                                       
+                                        <input type="file" name="...">
+                                    </span>
+                                    <a href="#" class="btn btn-danger fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-6" style="  position: relative;
+  top: 34px;">
+                            <div class="fg-line">
+                                    <input type="text" class="form-control input-lg" placeholder="New Treatment Tip Title">
+                                </div>
+
+                                <div class="fg-line">
+                                    <input type="text" class="form-control input-lg" placeholder="Description">
+                                </div>
+                                <div class="col-sm-12 m-b-15">
+                                    <select class="tag-select" multiple="" data-placeholder="Choose group assignees..." style="display: none;">
+                                        <option value="Alcohol">Alcohol</option>
+                                        <option value="Narcotics">Narcotics</option>
+                                        <option value="Nicotine">Nicotine</option>
+                                        <option value="Sex">Sex</option>
+                                        <option value="Codependents">Codependents</option>
+                                        <option value="Cocaine">Cocaine</option>
+                                        <option value="Marijuana">Marijuana</option>
+                                    </select>
+                                </div>
+                                </div>
+                                <button class="btn bgm-blue waves-effect waves-button waves-float tsubmit" style="  position: relative;
+  left: 20px;  margin-top: 10px;">Submit</button>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+
+                        <div class="col-sm-4" style="padding: 6px;">
+                            <div class="card">
+                                <div class="card-header ch-alt m-b-20 tbk one">
+                                    <h2>Make A Connection<small>Phasellus condimentum ipsum id auctor</small></h2>
+                                    <ul class="actions">
+
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="md md-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Change Date Range</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Change Graph Type</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Other Settings</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <button class="btn bgm-blue btn-float waves-effect"><i class="md  md-edit"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    Make an effort to connect with someone. Solve a problem together, or even just share a common thought about the weather. Find a common area to create a sense of community. 
+                                </div>
+                                <div class="listview">
+                                <a class="lv-footer" href="">View All Responses</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-sm-4" style="padding: 6px;" >
+                        
+                        <div class="card">
+                            <a href="tip-response.html">
+                            <span class="notification-circle "> <span>4</span></span>
+                                <div class="card-header ch-alt bgm-bluegray m-b-20 tbk six">
+                                    <h2>Replacing Old Habits<small>Phasellus condimentum ipsum id auctor</small></h2>
+                                    <ul class="actions actions-alt">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="md md-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Change Date Range</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Change Graph Type</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Other Settings</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <button class="btn bgm-blue btn-float waves-effect"><i class="md  md-edit"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    Every time we respond differently to a familiar situation, or try to, we forge new neural pathways on top of the old ones. The more we practice, the stronger the new pathway gets, and...
+                                </div>
+                            <div class="listview">
+                                <a class="lv-footer" href="">View All Responses</a>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                       <!-- <div class="col-xs-12 col-sm-4">
+                                <div id="best-selling" class="dash-widget-item">
+                                    <div class="dash-widget-header">
+                                        <div class="dash-widget-title">Best Sellings</div>
+                                        <img src="img/widgets/alpha.jpg" alt="">
+                                        <div class="main-item">
+                                            <small>Samsung Galaxy Alpha</small>
+                                            <h2>$799.99</h2>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="listview p-t-5">
+                                        <a class="lv-item" href="">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/widgets/note4.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="lv-title">Samsung Galaxy Note 4</div>
+                                                    <small class="lv-small">$850.00 - $1199.99</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" href="">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/widgets/mate7.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="lv-title">Huawei Ascend Mate</div>
+                                                    <small class="lv-small">$649.59 - $749.99</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" href="">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/widgets/535.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="lv-title">Nokia Lumia 535</div>
+                                                    <small class="lv-small">$189.99 - $250.00</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        
+                                        <a class="lv-footer" href="">
+                                            View All
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+                        <div class="col-sm-4" style="padding: 6px;">
+                            <div class="card">
+                                <div class="card-header ch-alt bgm-bluegray m-b-20 tbk three">
+                                    <h2>Leverage Your Unique Strengths<small>Phasellus condimentum ipsum id auctor</small></h2>
+                                    <ul class="actions actions-alt">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="md md-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Change Date Range</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Change Graph Type</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Other Settings</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <button class="btn bgm-blue btn-float waves-effect"><i class="md  md-edit"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    When we do the things we're good at and that are tied to our best character traits, we reap lasting benefits and increase our baseline happiness level.
+
+This is more than just...
+                                </div>
+                                <div class="listview">
+                                <a class="lv-footer" href="">View All Responses</a>
+                                </div>                                
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-4" style="padding: 6px;">
+                            <div class="card">
+                                <div class="card-header ch-alt m-b-20 tbk four">
+                                    <h2>Hold Yourself Accountable
+<small>Phasellus condimentum ipsum id auctor</small></h2>
+                                    <ul class="actions">
+
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="md md-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Change Date Range</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Change Graph Type</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Other Settings</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <button class="btn bgm-blue btn-float waves-effect"><i class="md  md-edit"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    We all know that resolutions are hard. Holding yourself accountable is a major key to realizing your goals. Here are some tips to keep your progress moving forward...
+                                </div>
+                                <div class="listview">
+                                <a class="lv-footer" href="">View All Responses</a>
+                                </div>                               
+                            </div>
+                        </div>
+                        <div class="col-sm-4" style="padding: 6px;">
+                            <div class="card">
+                                <div class="card-header ch-alt bgm-bluegray m-b-20 tbk five">
+                                    <h2>Identify Your Triggers<small>Phasellus condimentum ipsum id auctor</small></h2>
+                                    <ul class="actions actions-alt">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="md md-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Change Date Range</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Change Graph Type</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Other Settings</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <button class="btn bgm-blue btn-float waves-effect"><i class="md  md-edit"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                Most of us have identifiable triggers that lead to our substance use. Maybe it's stress or relaxation, peer pressure & social settings, anger, sadness, anxiety, loneliness or boredom...
+                                </div>
+                                <div class="listview">
+                                <a class="lv-footer" href="">View All Responses</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4" style="padding: 6px;">
+                            <div class="card">
+                                <div class="card-header ch-alt bgm-bluegray m-b-20 tbk two">
+                                    <h2>Understand Your Emotions<small>Phasellus condimentum ipsum id auctor</small></h2>
+                                    <ul class="actions actions-alt">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="md md-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Change Date Range</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Change Graph Type</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Other Settings</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <button class="btn bgm-blue btn-float waves-effect"><i class="md  md-edit"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    Many of our physical, mental and relational problems come from our inability to adequately experience our emotions. We deny, bury, project, rationalize, self-medicate and sweep them...
+                                </div>
+                                <div class="listview">
+                                <a class="lv-footer" href="">View All Responses</a>
+                                </div>
+                            </div>
+                        </div>
+
+                                                <div class="col-sm-4" style="padding: 6px;">
+                            <div class="card">
+                                <div class="card-header ch-alt m-b-20 tbk seven">
+                                    <h2>Small Steps Lead to Lifelong Change<small>Phasellus condimentum ipsum id auctor</small></h2>
+                                    <ul class="actions">
+
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="md md-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Change Date Range</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Change Graph Type</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Other Settings</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <button class="btn bgm-blue btn-float waves-effect"><i class="md  md-edit"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    Change begins with a decision and happens with every action you take. Even big and intimidating challenges can be broken down into smaller, more manageable tasks. You...
+
+
+                                </div>
+                                <div class="listview">
+                                <a class="lv-footer" href="">View All Responses</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4" style="padding: 6px;">
+                            <div class="card">
+                                <div class="card-header ch-alt bgm-bluegray m-b-20 tbk eight">
+                                    <h2> Follow Your Instincts<small>Phasellus condimentum ipsum id auctor</small></h2>
+                                    <ul class="actions actions-alt">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="md md-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Change Date Range</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Change Graph Type</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Other Settings</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <button class="btn bgm-blue btn-float waves-effect"><i class="md  md-edit"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    All of us feel pressure from others at different points in our lives. It can be hard to shut out the voices that tell us to do (or not do) something. But sometimes listening to our own voice can be...
+
+                                </div>
+                                <div class="listview">
+                                <a class="lv-footer" href="">View All Responses</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4" style="padding: 6px;">
+                            <div class="card">
+                                <div class="card-header ch-alt bgm-bluegray m-b-20 tbk nine">
+                                    <h2>Who Inspires You?<small>Phasellus condimentum ipsum id auctor</small></h2>
+                                    <ul class="actions actions-alt">
+                                        <li class="dropdown">
+                                            <a href="" data-toggle="dropdown">
+                                                <i class="md md-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Change Date Range</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Change Graph Type</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Other Settings</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    
+                                    <button class="btn bgm-blue btn-float waves-effect"><i class="md  md-edit"></i></button>
+                                </div>
+
+                                <div class="card-body card-padding">
+                                    We all choose our own role models–whether they're older siblings, favorite teachers or even people we haven't met.
+
+Who is your role model? Do their actions guide you to make the right choices? 
+
+
+                                </div>
+                                <div class="listview">
+                                <a class="lv-footer" href="">View All Responses</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br/>
+                    <br/>
+
+
+                    
+
+                    
+                    <br/>
+                    <br/>
+
+
+
+
+                    <br/>
+                    <br/>
+
+                    <!-- Extra -->
+
+
+                    <div class="row">
+
+
+
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Older IE warning message -->
+        <!--[if lt IE 9]>
+            <div class="ie-warning">
+                <h1 class="c-white">IE SUCKS!</h1>
+                <p>You are using an outdated version of Internet Explorer, upgrade to any of the following web browser <br/>in order to access the maximum functionality of this website. </p>
+                <ul class="iew-download">
+                    <li>
+                        <a href="http://www.google.com/chrome/">
+                            <img src="img/browsers/chrome.png" alt="">
+                            <div>Chrome</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.mozilla.org/en-US/firefox/new/">
+                            <img src="img/browsers/firefox.png" alt="">
+                            <div>Firefox</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.opera.com">
+                            <img src="img/browsers/opera.png" alt="">
+                            <div>Opera</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.apple.com/safari/">
+                            <img src="img/browsers/safari.png" alt="">
+                            <div>Safari</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="img/browsers/ie.png" alt="">
+                            <div>IE (New)</div>
+                        </a>
+                    </li>
+                </ul>
+                <p>Upgrade your browser for a Safer and Faster web experience. <br/>Thank you for your patience...</p>
+            </div>   
+        <![endif]-->
+        
+        
+        <!-- Javascript Libraries -->
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+       
+        <script src="vendors/nicescroll/jquery.nicescroll.min.js"></script>
+        <script src="vendors/waves/waves.min.js"></script>
+        <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="vendors/sweet-alert/sweet-alert.min.js"></script>
+                <script src="vendors/chosen/chosen.jquery.min.js"></script>
+        <script src="vendors/noUiSlider/jquery.nouislider.all.min.js"></script>
+        <script src="vendors/input-mask/input-mask.min.js"></script>
+        <script src="vendors/farbtastic/farbtastic.min.js"></script>
+        <script src="vendors/summernote/summernote.min.js"></script>
+        <script src="vendors/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+        <script src="vendors/fileinput/fileinput.min.js"></script>
+
+        <script src="vendors/sweet-alert/sweet-alert.min.js"></script>
+        
+        <script src="js/functions.js"></script>
+        <script src="js/demo.js"></script>
+    </body>
+  </html>

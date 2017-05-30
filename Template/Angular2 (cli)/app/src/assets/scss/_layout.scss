@@ -1,0 +1,75 @@
+.content {
+  @include media-breakpoint-up(xl) {
+    padding: ($header-height + $grid-gutter-width-base) $grid-gutter-width-base 0 $sidebar-width;
+  }
+
+  @include media-breakpoint-between(sm, lg) {
+    padding: ($header-height + $grid-gutter-width-base) $grid-gutter-width-base 0;
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding: ($header-height + $grid-gutter-width-base/2) $grid-gutter-width-base/2 0;
+  }
+}
+
+.content__inner {
+  margin: auto;
+
+  &:not(.content__inner--sm) {
+    max-width: 1200px;
+  }
+}
+
+.content__inner--sm {
+  max-width: 800px;
+}
+
+.content__title {
+  margin-bottom: 2rem;
+  padding: 1rem 2rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  & > h1 {
+    line-height: 100%;
+    font-weight: normal;
+    font-size: 1.15rem;
+    margin: 0;
+    text-transform: uppercase;
+    color: $content-title-heading-color;
+  }
+
+  .actions {
+    margin-left: auto;
+  }
+
+  & > small {
+    font-size: 1rem;
+    display: block;
+    margin-top: 0.8rem;
+    color: lighten($content-title-heading-color, 18%);
+  }
+}
+
+.dashboard {
+  @include clearfix();
+  margin: 0 (-$grid-gutter-width-base/2);
+}
+
+.dashboard__column {
+  float: left;
+  padding: 0 $grid-gutter-width-base/2;
+
+  @media(min-width: 1600px) {
+    width: 33.333333%;
+  }
+
+  @media(min-width: 800px) and (max-width: 1599px) {
+    width: 50%;
+  }
+
+  @media(max-width: 799px) {
+    width: 100%;
+  }
+}
